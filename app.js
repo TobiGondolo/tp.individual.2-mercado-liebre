@@ -11,6 +11,14 @@ app.get('/',function(req,res){
     res.sendFile(__dirname + '/views/index.html');
 });
 
+app.get('/register',function(req,res){
+    res.sendFile(__dirname + '/views/pages/formRegister.html');
+});
+
+app.get('/login',function(req,res){
+    res.sendFile(__dirname + '/views/pages/formLogin.html');
+});
+
 app.get('/css', function(req,res){
     res.sendFile(__dirname + '/public/assets/css/stylesheet.css');
 });
